@@ -5,10 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <!-- use bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- custom style sheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Hello World</h1>
-    <img src="images/logo-tp.png" alt="transparent logo">
+    <div class="container-fluid">
+        <header class="d-flex justify-content-center py-3">
+            <!-- navbar -->
+            <nav class="nav navbar navbar-expand-lg justify-content-center" id="nav">
+                <!-- <a class="navbar-brand" href="#">--><img src="images/logo-xsml.png" alt= "Logo"> <!-- </a> --> 
+                <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link link-secondary" >Home <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link link-dark" href="#expertise">Expertise</a></li>
+                <li class="nav-item"><a class="nav-link link-dark" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link link-dark" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        <!-- end navbar -->
+        </header>
+    </div>
+    <section class="bgimage" id="hero-section">
+        <div id="statement">
+            <h1>Hi, I'm Keenan!</h1>
+            <p>
+                I'm a Web Developer with a passion for problem solving and back-end development. I also like the creativity and expression possible with front-end design and development.
+            </p>
+        </div>
+    </section>
+    <div class="container">
+        <section id="expertise">
+            <div>
+                <h2>Expertise</h2>
+                <p>During my studies I have focused primarily on web development, first completing a Certificate III in information digital media and technology, then subsequently a bachelor's degree of Information Technology with a focus on programming and web development. Areas of study included foundational principles of object oriented programming, data structures, and algorithms as well as cloud technologies, security principles, and user interface/ user experience.</p>
+            </div>
+        
+            <div class="skills">
+                <img src="images\html5.svg" alt="Skill badge, HTML5" class="skill-badges">
+                <img src="images\css3.svg" alt="Skill badge, CSS3" class="skill-badges">
+                <img src="images\javascript.svg" alt="Skill badge, JavaScript" class="skill-badges">
+                
+            </div>
+            <div class="skills">
+                <img src="images\php.svg" alt="Skill badge, PHP" class="skill-badges"> 
+                <img src="images\laravel.svg" alt="Skill badge, Laravel" class="skill-badges">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/300px-GitHub_Invertocat_Logo.svg.png" alt="" class="skill-badges">
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="card ">
+                <div class="card-body">
+                    <h3 class="card-title">Major University Project</h3>
+                    <img class="card-img-bottom" src="images\industry_project_01.jpg" alt="Card image cap">
+                    
+                    <p class="card-text">Completed as a distributed team mimicing real world work conditions the planning, design, build and (temporary) implementation of this university scheduling web application constituted our teams final project submission.</p>
+                    <a href="" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div>
+                <h2>Contact</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur itaque consectetur molestiae magni hic quisquam, fugit non doloremque qui blanditiis ea optio doloribus corrupti fugiat minus deserunt dolore fuga voluptates?</p>
+            </div>
+        </section>
+        
+    </div>
+    <footer>
+        <img src="images/logo-tp.png" alt="transparent logo">
+    </footer>
+    
 </body>
 </html>
