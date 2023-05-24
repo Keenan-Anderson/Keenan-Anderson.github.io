@@ -1,3 +1,59 @@
 body{
     font-family: sans-serif;
+    color: black;
+}
+#nav{
+    position: fixed; top:0;
+    width: 100vw;
+    font-size: large;
+    font-weight: 500;
+    background-color: #ffffff;
+    z-index: 1030;
+}
+body > div > header > nav > ul > li > a{
+    color: black;
+}
+body > div > header > nav > ul > li > a:hover{
+    color: gray;
+}
+.bgimage {
+    height:100vh;
+    background: url(images/logo-tp.png);
+    background-repeat: no-repeat;
+    background-position:left;
+    background-size:100vh;
+    background-attachment: fixed;
+  }
+  .bgimage h5 {
+    color:white;
+    text-shadow:2px 2px #333;
+  }
+  #statement {
+	text-align: center; /*letter-spacing:.2em;*/
+	position: absolute;
+    font-weight: 500;
+    font-size: 1.8rem;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width:75%;
+    color: #333;
+}
+.skills{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+}
+.skill-badges{   
+    /* background-color: lightgray; */
+    width: 150px;
+    min-height: 150px;
+}
+.work-img-container > img{
+    max-height: 65vw;
+    max-width: 65vw;
+}
+section{
+    padding-top: 4em;
 }
