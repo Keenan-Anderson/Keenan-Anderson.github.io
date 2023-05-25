@@ -3,32 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content=" initial-scale=1.0">
+    <title>Keenan-Anderson</title>
     <!-- use bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- use jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <!-- custom style sheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <div class="container-fluid">
-        <header class="d-flex justify-content-center py-3">
-            <!-- navbar -->
-            <nav class="nav navbar navbar-expand-lg justify-content-center" id="nav">
-                <!-- <a class="navbar-brand" href="#">--><img src="images/logo-xsml.png" alt= "Logo"> <!-- </a> --> 
-                <ul class="navbar-nav">
-                <li class="nav-item"><a href="#" class="nav-link link-secondary" >Home <span class="sr-only">(current)</span></a></li>
-                <li class="nav-item"><a class="nav-link link-dark" href="#expertise">Expertise</a></li>
-                <li class="nav-item"><a class="nav-link link-dark" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link link-dark" href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        <!-- end navbar -->
-        </header>
-    </div>
+    <nav class="navbar fixed-top navbar-expand-md nav-style"> 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <img id="menu-burger" src="images\burger.png" alt="">
+        </button>
+        <a class="navbar-brand" href="#"><img src="images/logo-xsml.png" alt= "Logo"></a>
+        <div class="nav-style collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                <a class="nav-link link-dark" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link link-dark" href="#expertise">Expertise</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-dark" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-dark" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <section class="bgimage" id="hero-section">
         <div id="statement">
-            <h1>Hi, I'm Keenan!</h1>
+            <h1>Hi, I'm Keenan</h1>
             <p>
                 I'm a Web Developer with a passion for problem solving and back-end development. I also like the creativity and expression possible with front-end design and development.
             </p>
@@ -40,17 +52,14 @@
                 <h2>Expertise</h2>
                 <p>During my studies I have focused primarily on web development, first completing a Certificate III in information digital media and technology, then subsequently a bachelor's degree of Information Technology with a focus on programming and web development. Areas of study included foundational principles of object oriented programming, data structures, and algorithms as well as cloud technologies, security principles, and user interface/ user experience.</p>
             </div>
-        
+            <!-- TODO clickable cards detailing experience with each technology -->
             <div class="skills">
                 <img src="images\html5.svg" alt="Skill badge, HTML5" class="skill-badges">
                 <img src="images\css3.svg" alt="Skill badge, CSS3" class="skill-badges">
                 <img src="images\javascript.svg" alt="Skill badge, JavaScript" class="skill-badges">
-                
-            </div>
-            <div class="skills">
                 <img src="images\php.svg" alt="Skill badge, PHP" class="skill-badges"> 
                 <img src="images\laravel.svg" alt="Skill badge, Laravel" class="skill-badges">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/300px-GitHub_Invertocat_Logo.svg.png" alt="" class="skill-badges">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="" class="skill-badges">
             </div>
         </section>
         <section id="projects">
@@ -65,6 +74,7 @@
                 </div>
             </div>
         </section>
+        <!-- TODO complete contact section with link to email -->
         <section id="contact">
             <div>
                 <h2>Contact</h2>
@@ -79,3 +89,7 @@
     
 </body>
 </html>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

@@ -1,50 +1,62 @@
+:root{
+    --dark: rgb(26, 26, 26);
+    --light: white;
+}
 body{
     font-family: sans-serif;
-    color: black;
+    color: var(--light);
+    background-color: var(--dark);
 }
-#nav{
-    position: fixed; top:0;
-    width: 100vw;
+.nav-style{
     font-size: large;
     font-weight: 500;
-    background-color: #ffffff;
-    z-index: 1030;
+    background-color: var(--dark);
 }
-body > div > header > nav > ul > li > a{
-    color: black;
+#navbarTogglerDemo01 > ul > li > a{
+    color: var(--light);
 }
-body > div > header > nav > ul > li > a:hover{
+#navbarTogglerDemo01 > ul > li > a:hover{
     color: gray;
+}
+#menu-burger{
+    max-height: 45px;
 }
 .bgimage {
     height:100vh;
-    background: url(images/logo-tp.png);
+    background: url(images/logo-tp-grn.png);
     background-repeat: no-repeat;
-    background-position:left;
-    background-size:100vh;
+    background-position:right;
+    background-size:80vh;
     background-attachment: fixed;
   }
-  .bgimage h5 {
-    color:white;
-    text-shadow:2px 2px #333;
+  .bgimage h1 {
+    font-size: 3em;
+    /* color:rgb(37, 37, 37); */
+    /* text-shadow:2px 2px #333; */
   }
   #statement {
-	text-align: center; /*letter-spacing:.2em;*/
+	text-align: left; /*letter-spacing:.2em;*/
 	position: absolute;
     font-weight: 500;
     font-size: 1.8rem;
-	top: 50%;
+	top: 60%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width:75%;
-    color: #333;
+    color: var(--light);
 }
 .skills{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: space-around;
     align-items: center;
     padding: 2em;
 }
+@media screen and (min-width: 720px) {
+    .skills  {
+        grid-template-columns: auto auto auto auto auto auto;
+    }
+  }
 .skill-badges{   
     /* background-color: lightgray; */
     width: 150px;
