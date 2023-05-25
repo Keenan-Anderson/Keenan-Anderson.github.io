@@ -31,8 +31,6 @@ body{
   }
   .bgimage h1 {
     font-size: 3em;
-    /* color:rgb(37, 37, 37); */
-    /* text-shadow:2px 2px #333; */
   }
   #statement {
 	text-align: left; /*letter-spacing:.2em;*/
@@ -62,10 +60,21 @@ body{
     width: 150px;
     min-height: 150px;
 }
+#projects > div{
+    color: var(--dark);
+}
 .work-img-container > img{
     max-height: 65vw;
     max-width: 65vw;
 }
 section{
     padding-top: 4em;
+}
+footer{
+    height:50vh;
+    background: url(images/logo-tp.png);
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-size:50vh;
+    background-attachment: fixed;
 }
