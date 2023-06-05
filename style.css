@@ -78,3 +78,9 @@ footer{
     background-size:50vh;
     background-attachment: fixed;
 }
+
+@media(max-width: 768px) {
+    .full-width {
+        width: 100%;  
+    }
+}
